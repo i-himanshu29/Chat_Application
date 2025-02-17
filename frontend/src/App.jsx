@@ -1,22 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
+import Signup from './pages/Signup/Signup'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <button class="btn">Button</button>
-    <button className="btn btn-outline">Default</button>
-    <button className="btn btn-outline btn-primary">Primary</button>
-    <button className="btn btn-outline btn-secondary">Secondary</button>
-    <button className="btn btn-outline btn-accent">Accent</button>
-    </>
+    <div className="p-4 h-screen flex items-center justify-center">
+      {/* <Login/> */}
+      {/* <Signup/> */}
+      <Home/>
+    </div>
   )
 }
 
